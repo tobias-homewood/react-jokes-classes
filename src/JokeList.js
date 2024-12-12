@@ -12,7 +12,7 @@ function JokeList({numJokesToGet = 5}) {
   /* at mount, get jokes */
   useEffect(() => {
     getJokes();
-  }, []);
+  }, [getJokes]);
 
   /* retrieve jokes from API */
 
